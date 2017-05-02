@@ -139,6 +139,8 @@ void BasketballDrawMarker::drawCylinder(const geometry_msgs::Point &cylinder_poi
 
 void BasketballDrawMarker::drawTrajectory(const nav_msgs::Path &trajectory)
 {
+   //rviz could display the trajectory of robot by show path topic
+   /*
     marker_id_++ ;
     trajectory_marker_.id = marker_id_ ;
     trajectory_marker_.action = visualization_msgs::Marker::ADD ;
@@ -154,6 +156,7 @@ void BasketballDrawMarker::drawTrajectory(const nav_msgs::Path &trajectory)
     last_trajectory_poiont_time_ = trajectory.poses.back().header.stamp ;
     marker_array_.markers.push_back(trajectory_marker_);
     ROS_INFO("draw trajectory") ;
+   */
 }
 
 void BasketballDrawMarker::drawAll()
